@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Postez un appel d'offre</title>
+     <link rel="stylesheet" href="css/opportunity.css">
+     <script src="js/appel.js"></script>
+</head>
+<body>
+     <header id="header">
+          <div class="header1">
+               <img class="ima"  src="image/opportunity.jpg">
+               <div class="slogan">
+                    <h1>OpportunityCareer</h1>
+                    <p>Find Your Own</p>
+               </div>
+          </div>
+          <div class="navbar">
+               <a href="index.html">Accueil</a>
+               <a href="APPEL.HTML">Poster un Appel d'Offre</a>
+               <a href="service.html">Rechercher un Métier</a>
+               <a href="postulez.html">Postuler pour un Emploi</a>
+               <a href="Cv.HTML">Enregistrer son Cv</a>
+               <a class="aide" href="Aide.html">?</a>
+          </div>
+     </header>
+     <section>
+          <h1 class="h1">POSTEZ VOTRE OFFRE</h1>
+          <form method="post" action="php/Appel.php">
+               <section id="form">
+                    <section class="section">
+                         <fieldset><label class="field">Information sur l'employeur</label>
+                              <ol>
+                                   <li>
+                                        <div>
+                                             <p><label for="name">Nom:</label></p>
+                                             <p><input type="text" size="50" placeholder="Entrer votre nom" name="name"
+                                                       id="name" class="champ" required="required"></p>
+                                        </div>
+                                   </li>
+                                   <li>
+                                        <div>
+                                             <p><label for="Telephone">Numéro de Téléphone :</label></p>
+                                             <p><input type="tel" placeholder="+237 6xx xx xx xx" name="telephone"
+                                                       id="telephone" required="required" class="champ"></p>
+                                        </div>
+                                   </li>
+                                   <li>
+                                        <div>
+                                             <p><label for="email">Email :</label></p>
+                                             <p><input type="email" name="email" size="50" placeholder="@gmail.com"
+                                                       id="email" required="required" class="champ"></p>
+                                        </div>
+                                   </li>
+                                   <li>
+                                        <div>
+                                             <p><label for="structure">Nom de la structure</label></p>
+                                             <p><input type="text" size="50" name="structure" id="structure"
+                                                       class="champ" required="required"></p>
+                                        </div>
+                                   </li>
+                              </ol>
+                         </fieldset>
+                         <fieldset><label class="field">Information sur l'emploi</label>
+                              <ol>
+                                   <li>
+                                        <div>
+                                             <p><label for="Secteur">Secteur D'activité :</label></p>
+                                             <p><input type="text" size="50"
+                                                       placeholder="Entrer le secteur d'activite e.g " name="secteur"
+                                                       id="secteur" required="required" class="champ"></p>
+                                        </div>
+                                   </li>
+                                   <li>
+                                        <div>
+                                             <p><label for="Poste">Nom du Poste :</label></p>
+                                             <p><input type="text" placeholder="Entrer le nom du poste a pourvoir"
+                                                       name="poste" id="poste" class="champ" required="required"></p>
+                                        </div>
+                                   </li>
+                                   <li>
+                                        <div>
+                                             <p><label for="heure">Nombre d'heure :</label></p>
+                                             <p><input type="number" size="50" id="heure" class="champ" name="heure"
+                                                       required="required"></p>
+                                        </div>
+                                   </li>
+                                   <li>
+                                        <div>
+                                             <p><label for="lieu">Lieu de travail :</label></p>
+                                             <p><input type="lieu" placeholder="pays-ville-quartier" size="50"
+                                                       class="champ" name="lieu" id="lieu" required="required"></p>
+                                        </div>
+                                   </li>
+
+                                   <li>
+                                        <div>
+                                             <p><label for="horraire"></label>Tranche horaire</p>
+                                             <!--bootstar/tp/home-->
+                                             <p><input type="text" size="50" name="horraire" id="horraire"
+                                                       class="champ" required="required"></p>
+                                        </div>
+                                   </li>
+                                   <li>
+                                        <div>
+                                             <p><label for="day"></label>Jour(s) de travail</p>
+                                             <!--bootstar/tp/home-->
+                                             <p><textarea size="50" name="day" id="day" width="20rem" height="20rem"
+                                                       class="champ" required="required"></textarea></p>
+                                        </div>
+                                   </li>
+                              </ol>
+                         </fieldset>
+                    </section>
+                    <section class="section">
+                         <fieldset><label class="field">Qualification</label>
+                              <ol>
+                                   <li>
+                                        <div>
+                                             <p><label for="age">Âge</label></p>
+                                             <p><input type="radio" value="15" name="age" id="15"><label class="choice" for="15">15-21 ans</label>
+                                             </p>
+                                             <p><input type="radio" value="21" name="age" id="21"><label class="choice" for="21">21-30ans</label>
+                                             </p>
+                                             <p><input type="radio" value="30" name="age" id="30"><label class="choice" for="30">plus de 30
+                                                       ans</label></p>
+                                             <p><input type="radio" value="pas" name="age" id="pas"><label class="choice" for="pas">Pas
+                                                       spécifier</label></p>
+                                             <p><input type="radio" value="pres" name="age" id="pres"><label class="choice"
+                                                       for="pres">Préciser</label><span></span></p>
+                                             <!--javascript-->
+                                        </div>
+                                   </li>
+                                   <li>
+                                        <div>
+                                             <p><label for="niveau">Niveau scolaire</label></p>
+                                             <p><input type="checkbox" name="niveau" value="CEP" id="niveau"><label class="choice" for="niveau">CEP
+                                                       Minimum</label></p>
+                                             <p><input type="checkbox" name="niveau" value="bepc" id="niveau"><label class="choice" for="niveu">BEPC
+                                                       Minimum</label></p>
+                                                       <p><input type="checkbox" name="niveau" value="cap" id="niveau"><label class="choice" for="niveu">CAP
+                                                       Minimum</label></p>
+                                             <p><input type="checkbox" name="niveau"  value="probatoirre" id="niveau"><label class="choice"
+                                                       for="niveu">PROBATOIRE
+                                                       minimun</label>
+                                             </p>
+                                             <p><input type="checkbox" name="niveau" value="bacc" id="niveau"><label class="choice" for="niveu">BACC
+                                                       Minimum</label></p>
+                                             <p><input type="checkbox" name="niveau" value="bts" id="niveau"><label class="choice" for="niveu">BTS
+                                                       Minimum</label></p>
+                                             <p><input type="checkbox" name="niveau" value="licence" id="niveau"><label class="choice"
+                                                       for="niveau">LICENCE
+                                                       Minimum</label>
+                                             </p>
+                                             <p><input type="checkbox" name="niveau" value="master" id="niveau"><label class="choice"
+                                                       for="niveau">MASTER </label>
+                                             </p>
+                                             <p><input type="checkbox" name="niveau" value="doctorat" id="niveau"><label class="choice"
+                                                       for="niveau">DOCTORAT</label>
+                                             </p>
+                                             <p><input type="checkbox" name="niveau" value="pas neccessaire" id="niveau"><label class="choice" for="niveau">Pas
+                                                       nécessaire</label></p>
+                                        </div>
+                                   </li>
+                                   <li>
+                                        <div>
+                                             <p><label for="qualite">Qualités :</label></p>
+                                             <p><textarea size="50" width="20rem" height="20rem" name="qualite"
+                                                       id="qualite" class="champ"></textarea></p>
+                                        </div>
+                                   </li>
+                                   <li>
+                                        <div>
+                                             <p><label for="apt">Aptitudes</label></p>
+                                             <p><textarea size="50" width="20rem" height="20rem" name="apt" id="apt"
+                                                       class="champ"></textarea>
+                                             </p>
+                                        </div>
+                                   </li>
+                                   <li>
+                                        <div>
+                                             <p><label for="condition">Conditions de travail</label></p>
+                                             <!--bootstar/tp/home-->
+                                             <p><textarea size="50" width="20rem" height="20rem" name="condition"
+                                                       id="condition" class="champ" required="required"></textarea></p>
+                                        </div>
+                                   </li>
+                              </ol>
+                         </fieldset>
+
+                    </section>
+               </section>
+               <div class="start1">
+                    <input id="btnappel" type="submit" value="Send" class="button" name="submit">
+                    <input type="reset" value="reset" class="button">
+               </div>
+          </form>
+     </section>
+<footer>
+     <div id="socialmedia">
+          <p>Suivez-nous sur</p>
+          <img src="fontawesome/svgs/brands/facebook.svg">
+          <img src="fontawesome/svgs/brands/twitter-square.svg">
+     </div>
+     <img class="ima" src="image/opportunity.jpg">
+</footer>
+<script src="js/opportunity.js"></script>
+
+</body>
+
+</html>

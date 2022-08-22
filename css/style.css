@@ -1,0 +1,44 @@
+.fond {
+    height: 100vh;
+    background-position: center;
+}
+
+.don {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+    padding-left: 10px;
+
+}
+
+.ron {
+    display: flex;
+}
+
+.don i {
+    font-size: 150%;
+    border-radius: 20px;
+    background-color: blue;
+    padding: 8px;
+    color: white;
+    margin-left: 15px;
+}
+
+.don h5 {
+    color: white;
+    margin-top: 10px;
+
+}
+
+.fond button {
+    font-size: 20px;
+    font-display: block;
+}
+
+h1 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+    color: black;
+}
